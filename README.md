@@ -4,11 +4,14 @@ This is an example app that implements a (partial) clone of GitHub's issue featu
 
 Some examples might include:
 
-- Paginating over the list of issues for the given repo.
-- Paginating over the list of comments for a given issue.
-- Ability to open/close an issue.
-- Ability to add a comment to an issue.
-- Ability to edit a comment.
+* Paginating over the list of issues for the given repo.
+* Adding a new issue
+* Editing an issue
+* Opening/closing an issue.
+* Paginating over the list of comments for a given issue.
+* Adding a comment to an issue.
+* Editing a comment.
+* Anything you like
 
 
 ## Setup
