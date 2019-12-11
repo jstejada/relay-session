@@ -47,7 +47,7 @@ const node/*: ReaderFragment*/ = {
       "kind": "LocalArgument",
       "name": "count",
       "type": "Int",
-      "defaultValue": 10
+      "defaultValue": 2
     },
     {
       "kind": "LocalArgument",
@@ -128,5 +128,5 @@ const node/*: ReaderFragment*/ = {
   ]
 };
 // prettier-ignore
-(node/*: any*/).hash = '9bc856a40fd532f17f270cc8ca1a8d30';
+(node/*: any*/).hash = 'f8f9978676396ba0a401a43eca7aa6b3';
 module.exports = node;

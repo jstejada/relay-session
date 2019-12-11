@@ -97,7 +97,7 @@ export default function RouterRenderer() {
   // Routes can suspend, so wrap in <Suspense>
   return (
     <ErrorBoundary>
-      <Suspense fallback={'Loading fallback...'}>
+      <Suspense fallback={null}>
         {/* Indicate to the user that a transition is pending, even while showing the previous UI */}
         {isPending ? (
           <div className="RouteRenderer-pending">Loading pending...</div>

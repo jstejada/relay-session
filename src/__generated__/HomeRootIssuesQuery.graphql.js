@@ -1,6 +1,6 @@
 /**
  * @flow
- * @relayHash ff27929476414f84cd2660970a63452b
+ * @relayHash 5fa4ea6f22a7e23ae8d34d6fe697847f
  */
 
 /* eslint-disable */
@@ -43,7 +43,7 @@ fragment IssuesListItem_issue on Issue {
 }
 
 fragment Issues_repository on Repository {
-  issues(first: 10, states: [OPEN]) {
+  issues(first: 2, states: [OPEN]) {
     edges {
       node {
         ...IssuesListItem_issue
@@ -133,12 +133,12 @@ return {
             "kind": "LinkedField",
             "alias": null,
             "name": "issues",
-            "storageKey": "issues(first:10,states:[\"OPEN\"])",
+            "storageKey": "issues(first:2,states:[\"OPEN\"])",
             "args": [
               {
                 "kind": "Literal",
                 "name": "first",
-                "value": 10
+                "value": 2
               },
               {
                 "kind": "Literal",
@@ -204,7 +204,7 @@ return {
     "operationKind": "query",
     "name": "HomeRootIssuesQuery",
     "id": null,
-    "text": "query HomeRootIssuesQuery(\n  $owner: String!\n  $name: String!\n) {\n  repository(owner: $owner, name: $name) {\n    ...Issues_repository\n    id\n  }\n}\n\nfragment IssuesListItem_issue on Issue {\n  id\n  title\n}\n\nfragment Issues_repository on Repository {\n  issues(first: 10, states: [OPEN]) {\n    edges {\n      node {\n        ...IssuesListItem_issue\n        id\n      }\n    }\n  }\n}\n",
+    "text": "query HomeRootIssuesQuery(\n  $owner: String!\n  $name: String!\n) {\n  repository(owner: $owner, name: $name) {\n    ...Issues_repository\n    id\n  }\n}\n\nfragment IssuesListItem_issue on Issue {\n  id\n  title\n}\n\nfragment Issues_repository on Repository {\n  issues(first: 2, states: [OPEN]) {\n    edges {\n      node {\n        ...IssuesListItem_issue\n        id\n      }\n    }\n  }\n}\n",
     "metadata": {}
   }
 };

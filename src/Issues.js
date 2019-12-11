@@ -16,7 +16,7 @@ export default function Issues(props) {
       fragment Issues_repository on Repository
         @argumentDefinitions(
           cursor: { type: "String" }
-          count: { type: "Int", defaultValue: 10 }
+          count: { type: "Int", defaultValue: 2 }
           states: { type: "[IssueState!]", defaultValue: ["OPEN"] }
         ) {
         issues(after: $cursor, first: $count, states: $states) {
@@ -54,6 +54,7 @@ export default function Issues(props) {
         onClick={() => {
           // TODO
         }}
+        disabled={true}
       >
         Load More (TODO)
       </button>
